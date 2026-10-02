@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Rizwana Zahoor — Candidate Skills Dashboard</title>
+<meta name="description" content="Rizwana Zahoor, Principal Software Quality Engineer | API, Backend &amp; Automation Testing. Turning quality into a competitive edge, with 13+ years driving test strategy, automation, and release stability for regulated platforms." />
+<link rel="canonical" href="https://rizwana-curriculum-vitae.vercel.app/" />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://rizwana-curriculum-vitae.vercel.app/" />
+<meta property="og:title" content="Rizwana Zahoor — Principal Software Quality Engineer" />
+<meta property="og:description" content="Turning quality into a competitive edge, with 13+ years driving test strategy, automation, and release stability for regulated platforms." />
+<meta name="twitter:card" content="summary" />
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e131d" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'dark' && t !== 'light') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<style>
+  /* ================= TOKENS ================= */
+  :root {
+    --paper: #f6f3ec; --paper-2: #efeadf; --sheet: #fffdf8;
+    --ink: #121a2b; --ink-2: #384152; --mute: #686b72; --faint: #8d8c87;
+    --rule: #e2dccf; --rule-2: #cfc6b4;
+    --gold: #9a7330; --gold-2: #b8914a; --gold-wash: #f3ead6;
+    --navy: #17233d; --navy-2: #22324f;
+    --st-foundation: #b9b3a6; --st-expansion: #8aa1bd; --st-ownership: #3d5476; --st-principal: #b8914a;
+    --serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    --sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --side: 312px; --col: 760px;
+    --gut: clamp(20px, 5vw, 56px);
+    --ease: cubic-bezier(.2,.7,.2,1);
+    color-scheme: light;
+  }
+  :root[data-theme="dark"] {
+    --paper: #0e131d; --paper-2: #131a27; --sheet: #141b28;
+    --ink: #ece7dc; --ink-2: #c9c3b6; --mute: #9b978e; --faint: #7f7c75;
+    --rule: rgba(236,231,220,.11); --rule-2: rgba(236,231,220,.2);
+    --gold: #d6b26e; --gold-2: #c9a25c; --gold-wash: rgba(214,178,110,.1);
+    --navy: #0a0f18; --navy-2: #1b2638;
+    --st-foundation: #6c6a64; --st-expansion: #6e86a6; --st-ownership: #9db2d2; --st-principal: #d6b26e;
+    color-scheme: dark;
+  }
+
+  /* ================= BASE ================= */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 32px; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; text-rendering: optimizeLegibility; transition: background-color .25s, color .25s; }
+  ul, ol { list-style: none; }
+  a { color: inherit; text-decoration: none; }
+  a, button { touch-action: manipulation; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  .ic { width: 17px; height: 17px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .ic.sm { width: 14px; height: 14px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 300; background: var(--ink); color: var(--paper); padding: .6rem 1rem; border-radius: 4px; font-weight: 600; }
+  .skip:focus { top: 12px; }
+
+  /* ================= SHELL ================= */
+  .shell { display: grid; grid-template-columns: var(--side) minmax(0, 1fr); min-height: 100vh; background: linear-gradient(90deg, var(--navy) var(--side), transparent var(--side)); }
+  .side { position: sticky; top: 0; height: 100vh; overflow-y: auto; scrollbar-width: thin; background: var(--navy); color: #ece7dc; display: flex; flex-direction: column; padding: 40px 32px 28px; }
+  .side > * { flex-shrink: 0; }
+  .mono { aspect-ratio: 1; flex-shrink: 0; }
+  .side::-webkit-scrollbar { width: 6px; } .side::-webkit-scrollbar-thumb { background: rgba(236,231,220,.15); border-radius: 6px; }
+  .mono { width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(214,178,110,.6); display: grid; place-items: center; font-family: var(--serif); font-size: 1.15rem; letter-spacing: .04em; color: #e3c48a; margin-bottom: 28px; }
+  .side-name { font-family: var(--serif); font-weight: 500; font-size: 1.9rem; line-height: 1.08; letter-spacing: -.01em; color: #f5f1e8; }
+  .side-role { margin-top: 12px; font-size: .9rem; font-weight: 500; color: #f5f1e8; line-height: 1.4; }
+  .side-focus { margin-top: 2px; font-size: .85rem; color: #d9b874; line-height: 1.45; }
+  .side-rule { height: 1px; background: rgba(236,231,220,.14); margin: 24px 0; border: 0; }
+  .contact { display: grid; gap: 2px; }
+  .contact li > a, .contact li.avail { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: .85rem; color: rgba(236,231,220,.82); line-height: 1.45; min-height: 36px; }
+  .contact li > a { transition: color .15s; }
+  .contact li > a:hover { color: #fff; }
+  .contact li > a span:first-of-type { overflow-wrap: anywhere; }
+  .contact .ic { margin-top: 2px; color: #d9b874; }
+  .toc { display: grid; gap: 1px; }
+  .toc-h { font-size: .75rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: rgba(236,231,220,.5); margin-bottom: 10px; }
+  .toc a { position: relative; display: flex; align-items: center; min-height: 36px; padding: 0 0 0 16px; font-size: .9rem; color: rgba(236,231,220,.68); transition: color .15s; }
+  .toc a::before { content: ''; position: absolute; left: 0; top: 50%; width: 6px; height: 1px; background: rgba(236,231,220,.3); transition: width .2s var(--ease), background-color .2s; }
+  .toc a:hover { color: #fff; }
+  .toc a[aria-current="true"] { color: #fff; }
+  .toc a[aria-current="true"]::before { width: 10px; left: -4px; background: #d9b874; height: 2px; }
+  .side-foot { margin-top: auto; padding-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .theme { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid rgba(236,231,220,.22); font-size: .8rem; color: rgba(236,231,220,.85); transition: border-color .15s, color .15s; }
+  .theme:hover { border-color: #d9b874; color: #fff; }
+  .theme .i-sun, [data-theme="dark"] .theme .i-moon { display: none; }
+  [data-theme="dark"] .theme .i-sun { display: block; }
+  .progress { height: 2px; background: rgba(236,231,220,.1); border-radius: 2px; overflow: hidden; flex: 1; }
+  .progress span { display: block; height: 100%; width: 100%; background: #d9b874; transform-origin: 0 50%; transform: scaleX(0); }
+
+  /* mobile header + contents sheet */
+  .mhead { display: none; }
+  .sheet { display: none; }
+
+  /* ================= MAIN COLUMN ================= */
+  main { min-width: 0; padding: 0 var(--gut) 96px; }
+  .col { max-width: var(--col); margin: 0 auto; }
+  .intro { padding: clamp(56px, 9vw, 104px) 0 48px; border-bottom: 1px solid var(--rule); }
+  .print-contact { display: none; margin-top: 10px; flex-wrap: wrap; gap: 4px 0; font-size: .85rem; color: var(--ink-2); }
+  .kicker { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+  .kicker::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+  .statement { margin-top: 22px; font-family: var(--serif); font-weight: 400; font-size: clamp(1.75rem, 3.4vw, 2.6rem); line-height: 1.22; letter-spacing: -.012em; color: var(--ink); max-width: 30ch; text-wrap: balance; }
+  .ledger { margin-top: 44px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+  .ledger li + li a { border-left: 1px solid var(--rule); }
+  .ledger a { display: flex; flex-direction: column; gap: 6px; padding: 16px 14px 4px; height: 100%; transition: background-color .2s; }
+  .ledger li:first-child a { padding-left: 0; }
+  .ledger a:hover { background: var(--paper-2); }
+  .lg-num { font-family: var(--serif); font-size: 2.1rem; line-height: 1; font-weight: 400; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+  .lg-lbl { font-size: .75rem; color: var(--mute); line-height: 1.35; letter-spacing: .01em; }
+
+  .sec { padding-top: clamp(64px, 8vw, 96px); }
+  .sh { display: grid; grid-template-columns: auto 1fr auto; align-items: baseline; gap: 0 18px; padding-bottom: 16px; margin-bottom: 32px; border-bottom: 1px solid var(--ink); }
+  .sh-num { font-family: var(--serif); font-size: 1rem; color: var(--gold); font-variant-numeric: lining-nums tabular-nums; }
+  .sh-title { font-family: var(--serif); font-weight: 500; font-size: clamp(1.55rem, 2.6vw, 2rem); line-height: 1.15; letter-spacing: -.012em; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); margin-bottom: 16px; font-size: .75rem; }
+  .cnt { font-family: var(--serif); font-size: .95rem; letter-spacing: 0; color: var(--gold); text-transform: none; }
+  .h4 { font-size: 1rem; font-weight: 600; line-height: 1.4; letter-spacing: -.003em; color: var(--ink); }
+  .small { font-size: .9rem; color: var(--ink-2); line-height: 1.65; margin-top: 4px; }
+  .idx { font-family: var(--serif); font-size: .95rem; color: var(--gold); font-variant-numeric: lining-nums tabular-nums; padding-top: 1px; }
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 48px; }
+  .sub { margin-top: 36px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 14px; font-size: .8rem; color: var(--ink-2); }
+  .legend li { display: inline-flex; align-items: center; gap: 8px; }
+  .legend b { font-weight: 600; color: var(--ink); margin-left: 2px; font-variant-numeric: tabular-nums; }
+  .sw { display: inline-block; width: 12px; height: 3px; border-radius: 2px; }
+
+  /* overview */
+  .ov { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 48px; }
+  .ov-b { display: grid; gap: 36px; align-content: start; }
+  .bars { display: grid; gap: 11px; }
+  .bars li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) 1.4rem; align-items: center; gap: 14px; font-size: .86rem; }
+  .br-l { color: var(--ink-2); }
+  .br-t { height: 3px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+  .br-f { display: block; height: 100%; width: var(--w); background: var(--ink); border-radius: inherit; transition: width .9s var(--ease); }
+  .br-v { text-align: right; font-family: var(--serif); font-size: 1rem; font-variant-numeric: tabular-nums; }
+  .stack { display: flex; height: 6px; gap: 3px; }
+  .stk { width: var(--w); border-radius: 2px; transition: width .9s var(--ease); }
+  .p-advanced { background: var(--ink); } .p-proficient { background: var(--gold-2); } .p-working-knowledge { background: var(--rule-2); }
+  .ratio { display: flex; align-items: center; gap: 18px; }
+  .ratio-n { font-family: var(--serif); font-size: 2.6rem; line-height: 1; }
+  .ratio-bar { flex: 1; height: 6px; background: var(--gold-2); border-radius: 2px; overflow: hidden; }
+  .ra { display: block; height: 100%; width: var(--w); background: var(--ink); transition: width .9s var(--ease); }
+  .sw-a { background: var(--ink); } .sw-b { background: var(--gold-2); }
+  .js-motion .reveal:not(.in) .br-f, .js-motion .reveal:not(.in) .stk, .js-motion .reveal:not(.in) .ra { width: 0; }
+
+  /* summary */
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: .8rem; font-weight: 500; color: var(--mute); letter-spacing: .02em; }
+  .meta-row li + li::before { content: '·'; margin: 0 12px; color: var(--rule-2); }
+  .meta-row li:first-child { color: var(--gold); }
+  .lead { margin-top: 20px; font-family: var(--serif); font-size: clamp(1.25rem, 1.9vw, 1.45rem); line-height: 1.5; color: var(--ink); }
+  .prose { margin-top: 18px; font-size: 1rem; line-height: 1.85; color: var(--ink-2); }
+
+  /* experience */
+  .arc { margin-bottom: 44px; }
+  .arc-t { position: relative; height: 4px; background: var(--rule); border-radius: 2px; }
+  .arc-s { position: absolute; top: 0; bottom: 0; left: var(--l); width: var(--w); border-radius: 2px; transform-origin: 0 50%; transition: transform 1s var(--ease); }
+  .arc-s a { position: absolute; inset: -20px 0; display: block; }
+  .arc-s a:focus-visible { outline-offset: -14px; }
+  .js-motion .arc:not(.in) .arc-s { transform: scaleX(0); }
+  .st-foundation.arc-s, .sw.st-foundation { background: var(--st-foundation); }
+  .st-expansion.arc-s, .sw.st-expansion { background: var(--st-expansion); }
+  .st-ownership.arc-s, .sw.st-ownership { background: var(--st-ownership); }
+  .st-principal.arc-s, .sw.st-principal { background: var(--st-principal); }
+  .arc-y { position: relative; height: 22px; margin-top: 10px; }
+  .arc-y span { position: absolute; left: var(--l); transform: translateX(-50%); font-family: var(--serif); font-size: .9rem; color: var(--mute); font-variant-numeric: lining-nums tabular-nums; }
+  .arc-y span:first-child { transform: none; } .arc-y span:last-child { transform: translateX(-100%); }
+
+  .roles { display: grid; }
+  .role { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 32px; padding: 36px 0; border-top: 1px solid var(--rule); }
+  .role:first-child { border-top: 0; padding-top: 4px; }
+  .r-when { display: flex; flex-direction: column; gap: 10px; }
+  .r-years { font-family: var(--serif); font-size: 1.05rem; line-height: 1.35; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+  .r-years time { white-space: nowrap; }
+  .r-dash { color: var(--faint); }
+  .r-stage { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+  .r-stage::before { content: ''; width: 14px; height: 3px; border-radius: 2px; background: var(--st-foundation); }
+  .st-expansion .r-stage::before { background: var(--st-expansion); }
+  .st-ownership .r-stage::before { background: var(--st-ownership); }
+  .st-principal .r-stage { color: var(--gold); } .st-principal .r-stage::before { background: var(--st-principal); }
+  .r-title { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.01em; }
+  .is-early .r-title { font-size: 1.3rem; }
+  .r-org { margin-top: 6px; font-size: .95rem; font-weight: 600; color: var(--ink); }
+  .r-loc { font-size: .85rem; color: var(--mute); margin-top: 2px; }
+  .r-focus { margin-top: 16px; font-size: 1.02rem; line-height: 1.65; color: var(--ink); padding-left: 16px; border-left: 2px solid var(--gold-2); }
+  .r-pts { margin-top: 18px; display: grid; gap: 10px; }
+  .r-pts li { position: relative; padding-left: 22px; font-size: .93rem; line-height: 1.7; color: var(--ink-2); }
+  .r-pts li::before { content: ''; position: absolute; left: 2px; top: .8em; width: 9px; height: 1px; background: var(--gold); }
+  .r-skills { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .r-skills li { font-size: .78rem; font-weight: 500; color: var(--ink-2); padding: 5px 11px; border: 1px solid var(--rule-2); border-radius: 999px; line-height: 1.3; }
+  .st-principal .r-skills li { border-color: color-mix(in srgb, var(--gold) 45%, transparent); color: var(--gold); background: var(--gold-wash); }
+  .js-motion .role .r-skills li { opacity: 0; transform: translateY(3px); transition: opacity .35s, transform .35s var(--ease); transition-delay: calc(240ms + var(--k) * 35ms); }
+  .js-motion .role.in .r-skills li { opacity: 1; transform: none; }
+  .gap { display: flex; align-items: center; gap: 10px; padding: 14px 0 14px 200px; font-family: var(--serif); font-style: italic; font-size: .98rem; color: var(--mute); border-top: 1px solid var(--rule); }
+
+  /* domains */
+  .dom { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .dom li, .aw li, .numbered li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding: 18px 0; border-top: 1px solid var(--rule); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags li { font-size: .85rem; font-weight: 500; color: var(--ink); padding: 7px 14px; border: 1px solid var(--rule-2); border-radius: 999px; background: var(--sheet); }
+
+  /* expertise + tools */
+  .ev-toggle { justify-self: end; display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 2px; font-size: .78rem; font-weight: 600; letter-spacing: .04em; color: var(--mute); }
+  .ev-toggle::before { content: ''; width: 30px; height: 17px; border-radius: 99px; border: 1px solid var(--rule-2); background: radial-gradient(circle at 8px 50%, var(--mute) 4.5px, transparent 5px); transition: background .2s, border-color .2s; }
+  .ev-toggle[aria-pressed="true"] { color: var(--ink); }
+  .ev-toggle[aria-pressed="true"]::before { border-color: var(--gold); background: radial-gradient(circle at 21px 50%, var(--gold) 4.5px, transparent 5px), var(--gold-wash); }
+  .xlist li { padding: 11px 0; border-top: 1px solid var(--rule); }
+  .x-n { font-size: .95rem; font-weight: 500; color: var(--ink); }
+  .ev { display: none; }
+  .show-ev .ev { display: block; margin-top: 4px; font-size: .82rem; line-height: 1.55; color: var(--mute); font-style: italic; font-family: var(--serif); }
+  .t-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; align-items: start; }
+  .t-list li { padding: 9px 0; border-top: 1px solid var(--rule); }
+  .t-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .t-n { font-size: .95rem; font-weight: 500; }
+  .t-lv { font-size: .76rem; font-weight: 600; color: var(--mute); white-space: nowrap; }
+  .t-lv.lv-advanced { color: var(--ink); }
+  .t-lv.lv-proficient { color: var(--ink-2); }
+  .t-d { display: block; margin-top: 3px; font-size: .84rem; line-height: 1.5; color: var(--ink-2); }
+
+  .ts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 36px; }
+  .dash li { position: relative; padding: 6px 0 6px 18px; font-size: .9rem; color: var(--ink-2); line-height: 1.5; }
+  .dash li::before { content: ''; position: absolute; left: 0; top: 1.05em; width: 8px; height: 1px; background: var(--gold); }
+
+  .resp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .resp li { padding: 20px 0; border-top: 1px solid var(--rule); }
+  .role-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .role-pills li { font-size: .76rem; font-weight: 600; line-height: 1.3; padding: 5px 11px; border-radius: 999px; color: var(--gold); background: var(--gold-wash); border: 1px solid color-mix(in srgb, var(--gold) 35%, transparent); }
+
+  .cert li { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid var(--rule); }
+  .c-n { font-size: .98rem; font-weight: 600; line-height: 1.4; }
+  .c-m { margin-top: 2px; font-size: .85rem; color: var(--mute); font-variant-numeric: lining-nums; }
+  .c-t { flex-shrink: 0; font-size: .72rem; font-weight: 600; letter-spacing: .05em; color: var(--mute); padding-top: 3px; white-space: nowrap; }
+  .c-t.is-cert { color: var(--gold); }
+
+  .aw { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .numbered p { font-size: 1rem; line-height: 1.75; color: var(--ink-2); }
+
+  /* AI & QE projects: the one dark feature block on the page */
+  .feat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .feat { position: relative; display: flex; flex-direction: column; padding: 32px 30px 28px; background: var(--navy); color: #ece7dc; border-radius: 4px; overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s; }
+  .feat::before { content: ''; position: absolute; left: 0; top: 0; right: 0; height: 2px; background: linear-gradient(90deg, #d9b874, rgba(217,184,116,.15)); }
+  [data-theme="dark"] .feat { background: var(--navy-2); }
+  @media (hover: hover) { .feat:hover { transform: translateY(-3px); box-shadow: 0 24px 40px -24px rgba(10,15,24,.6); } }
+  .feat-idx { font-family: var(--serif); font-size: .95rem; color: #d9b874; }
+  .feat-t { margin-top: 14px; font-family: var(--serif); font-weight: 500; font-size: 1.45rem; line-height: 1.2; color: #f5f1e8; }
+  .feat-d { margin-top: 14px; font-size: .92rem; line-height: 1.7; color: rgba(236,231,220,.8); flex: 1; }
+  .feat .p-link { margin-top: 22px; color: #e3c48a; }
+  .feat-lead { grid-column: 1 / -1; }
+  .feat-lead .feat-t { font-size: 1.7rem; }
+  .feat-lead .feat-d { max-width: 62ch; }
+  .feat-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .feat-tags li { font-size: .78rem; font-weight: 500; color: #e3c48a; padding: 5px 11px; border: 1px solid rgba(217,184,116,.4); border-radius: 999px; line-height: 1.3; }
+
+  .proj { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .proj li { padding: 18px 0; border-top: 1px solid var(--rule); }
+  .p-h { display: flex; flex-direction: column; gap: 2px; }
+  .p-link { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; font-size: .85rem; font-weight: 500; color: var(--gold); }
+  .p-link span:first-child { overflow-wrap: anywhere; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .25s var(--ease); }
+  .p-link:hover span:first-child { background-size: 100% 1px; }
+  .p-link .ic { transition: transform .2s var(--ease); }
+  .p-link:hover .ic { transform: translate(1px, -1px); }
+
+  .checks li { display: flex; gap: 14px; padding: 14px 0; border-top: 1px solid var(--rule); font-size: .98rem; line-height: 1.65; color: var(--ink-2); }
+  .checks .ic { margin-top: 5px; color: var(--gold); }
+  .edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .edu li { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 18px 0; border-top: 1px solid var(--rule); }
+  .edu-y { font-family: var(--serif); font-size: 1.25rem; color: var(--gold); font-variant-numeric: lining-nums tabular-nums; }
+
+
+  /* ================= EXECUTIVE IMPACT ================= */
+  .k-mob { display: none; }
+  /* signals: plain editorial index, ink only */
+  .signals { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--rule); margin: -14px 0 44px; }
+  .sg { display: flex; flex-direction: column; padding: 22px 20px 20px; }
+  .sg + .sg { border-left: 1px solid var(--rule); }
+  .sg:first-child { padding-left: 0; }
+  .sg-label { font-family: var(--sans); font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .sg-head { margin-top: 6px; font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; letter-spacing: -.01em; color: var(--ink); }
+  .sg-big { margin-top: 2px; font-family: var(--serif); font-size: 2.6rem; line-height: 1; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+  .sg-unit { font-size: 1.1rem; color: var(--ink-2); }
+  .sg-ev { margin-top: 10px; font-size: .86rem; line-height: 1.55; color: var(--ink-2); flex: 1; }
+  .sg-link { margin-top: 14px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; font-size: .8rem; font-weight: 600; color: var(--gold); }
+  .sg-link .ic { transition: transform .2s var(--ease); }
+  .sg-link:hover .ic { transform: translateY(2px); }
+  .countup { display: inline-block; min-width: var(--w); text-align: right; }
+
+  /* case studies: evidence briefs */
+  .cases { display: grid; gap: 18px; }
+  .cs { background: var(--sheet); border: 1px solid var(--rule); border-radius: 3px; transition: border-color .25s, transform .25s var(--ease); scroll-margin-top: 32px; }
+  @media (hover: hover) { .cs:not(.open):hover { transform: translateY(-1px); border-color: var(--rule-2); } }
+  .cs.open { border-color: color-mix(in srgb, var(--gold) 55%, transparent); box-shadow: inset 0 2px 0 var(--gold); }
+  .cs-head { padding: 26px 30px 20px; }
+  .cs-cat { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .cs-title { margin-top: 8px; font-family: var(--serif); font-weight: 500; font-size: 1.62rem; line-height: 1.15; letter-spacing: -.012em; color: var(--ink); }
+  .cs-where { margin-top: 6px; font-size: .84rem; font-weight: 600; color: var(--ink-2); }
+  .cs-sum { margin-top: 12px; font-size: .96rem; line-height: 1.65; color: var(--ink-2); max-width: 64ch; }
+  .brief { margin: 0 30px; }
+  .br-row { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 20px; padding: 14px 0; border-top: 1px solid var(--rule); }
+  .br-row dt { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); padding-top: 3px; }
+  .br-row dd { font-size: .93rem; line-height: 1.65; color: var(--ink-2); }
+  .br-impact dd { color: var(--ink); }
+  .ev-kind { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--mute); border: 1px solid var(--rule-2); border-radius: 2px; padding: 2px 7px; margin-bottom: 8px; font-size: .75rem; }
+  .ev-kind.is-measured { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+  .imp-txt { font-size: 1rem; font-weight: 600; line-height: 1.55; color: var(--ink); }
+  .imp-measure { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+  .imp-num { font-family: var(--serif); font-size: 2.3rem; line-height: 1; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+  .imp-of { font-size: 1.2rem; color: var(--mute); }
+  .imp-measure .imp-txt { font-weight: 500; }
+  .br-list { display: grid; gap: 7px; }
+  .br-list li { position: relative; padding-left: 16px; }
+  .br-list li::before { content: ''; position: absolute; left: 0; top: .78em; width: 7px; height: 1px; background: var(--gold); }
+  .br-stack { display: flex; flex-wrap: wrap; gap: 6px; }
+  .br-stack li { font-size: .82rem; font-weight: 600; color: var(--ink); padding: 4px 10px; border: 1px solid var(--rule-2); border-radius: 2px; line-height: 1.3; background: var(--paper); }
+  .cs-foot { padding: 14px 30px 22px; border-top: 1px solid var(--rule); margin-top: 0; }
+  .cs-btn { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 16px; border: 1px solid var(--rule-2); border-radius: 2px; font-size: .84rem; font-weight: 600; color: var(--ink); transition: border-color .2s, background-color .2s, color .2s; }
+  .cs-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .cs-btn-n { font-weight: 500; color: var(--mute); transition: color .2s; }
+  .cs.open .cs-btn-n { color: inherit; opacity: .75; }
+  .cs-btn .ic { transition: transform .3s var(--ease); }
+  .cs.open .cs-btn { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .cs.open .cs-btn .ic { transform: rotate(180deg); }
+  .cs-panel { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .45s var(--ease), visibility 0s linear .45s; }
+  .cs.open .cs-panel { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows .45s var(--ease), visibility 0s; }
+  .cs-inner { overflow: hidden; min-height: 0; }
+  .brief-more .br-row { opacity: 0; transform: translateY(5px); transition: opacity .3s, transform .3s var(--ease); }
+  .cs.open .brief-more .br-row { opacity: 1; transform: none; }
+  .cs.open .brief-more .br-row:nth-child(1) { transition-delay: .14s; } .cs.open .brief-more .br-row:nth-child(2) { transition-delay: .2s; } .cs.open .brief-more .br-row:nth-child(3) { transition-delay: .26s; }
+  .cs.flash { animation: cs-flash 1.6s var(--ease); }
+  @keyframes cs-flash { 0%, 40% { box-shadow: inset 0 2px 0 var(--gold), 0 0 0 3px rgba(184,145,74,.45); } 100% { box-shadow: inset 0 2px 0 var(--gold), 0 0 0 3px rgba(184,145,74,0); } }
+  [data-theme="dark"] .ev-kind.is-measured { color: var(--navy); }
+  [data-theme="dark"] .cs.open .cs-btn { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+
+  /* closing contact */
+  .close { margin-top: clamp(72px, 9vw, 112px); padding: 44px 0 0; border-top: 1px solid var(--ink); display: grid; gap: 24px; }
+  .close h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.8rem, 3vw, 2.3rem); line-height: 1.1; }
+  .close p { margin-top: 8px; color: var(--mute); font-size: .95rem; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; gap: 9px; min-height: 46px; padding: 0 18px; border-radius: 2px; font-size: .88rem; font-weight: 600; letter-spacing: .01em; transition: background-color .2s, color .2s, border-color .2s, transform .15s var(--ease); }
+  .btn span { overflow-wrap: anywhere; }
+  .btn-ink { background: var(--ink); color: var(--paper); }
+  .btn-ink:hover { background: var(--gold); color: #fff; }
+  [data-theme="dark"] .btn-ink:hover { color: var(--navy); }
+  .btn-line { border: 1px solid var(--rule-2); color: var(--ink); }
+  .btn-line:hover { border-color: var(--gold); color: var(--gold); }
+  @media (hover: hover) { .btn:hover { transform: translateY(-1px); } }
+  .foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .8rem; color: var(--faint); }
+  .foot a { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; }
+  .foot a:hover { color: var(--gold); }
+
+  /* reveal */
+  .js-motion .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+  .js-motion .reveal.in { opacity: 1; transform: none; }
+  .js-motion .intro > * { animation: rise .8s var(--ease) both; }
+  .js-motion .intro > *:nth-child(2) { animation-delay: .08s; } .js-motion .intro > *:nth-child(3) { animation-delay: .16s; } .js-motion .intro > *:nth-child(4) { animation-delay: .24s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 1240px) {
+    :root { --side: 280px; }
+    .side { padding: 36px 26px 24px; }
+    .ledger { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .ledger li:nth-child(4) a { border-left: 0; padding-left: 0; }
+    .ledger li:nth-child(n+4) a { border-top: 1px solid var(--rule); }
+    .ts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 1023px) {
+    .k-desk { display: none; } .k-mob { display: inline; }
+    .shell { display: block; background: none; }
+    .side { display: none; }
+    .mhead { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px; height: calc(60px + env(safe-area-inset-top)); padding: env(safe-area-inset-top) max(var(--gut), env(safe-area-inset-right)) 0 max(var(--gut), env(safe-area-inset-left)); background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule); }
+    .mh-brand { display: flex; align-items: center; gap: 10px; min-height: 44px; font-family: var(--serif); font-size: 1.1rem; font-weight: 500; }
+    .mh-brand .mono { width: 34px; height: 34px; margin: 0; font-size: .82rem; color: var(--gold); border-color: color-mix(in srgb, var(--gold) 55%, transparent); }
+    .mh-tools { display: flex; align-items: center; gap: 6px; }
+    .mh-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 44px; min-height: 44px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--rule-2); font-size: .82rem; font-weight: 600; letter-spacing: .02em; }
+    .mh-btn.theme-m { padding: 0; }
+    .mh-btn .i-sun, [data-theme="dark"] .mh-btn .i-moon { display: none; }
+    [data-theme="dark"] .mh-btn .i-sun { display: block; }
+    .mh-progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; }
+    .mh-progress span { display: block; height: 100%; background: var(--gold); transform-origin: 0 50%; transform: scaleX(0); }
+    .sheet { display: block; position: fixed; inset: 0; z-index: 80; visibility: hidden; }
+    .sheet.open { visibility: visible; }
+    .sheet-bg { position: absolute; inset: 0; background: rgba(10,15,24,.45); opacity: 0; transition: opacity .25s; }
+    .sheet.open .sheet-bg { opacity: 1; }
+    .sheet-panel { position: absolute; left: 0; right: 0; bottom: 0; max-height: 86vh; overflow-y: auto; background: var(--navy); color: #ece7dc; border-radius: 14px 14px 0 0; padding: 22px max(var(--gut), env(safe-area-inset-left)) calc(24px + env(safe-area-inset-bottom)); transform: translateY(100%); transition: transform .3s var(--ease); }
+    .sheet.open .sheet-panel { transform: none; }
+    .sheet-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .sheet .toc a { min-height: 48px; font-size: 1.02rem; border-bottom: 1px solid rgba(236,231,220,.08); }
+    .sheet-close { min-width: 44px; min-height: 44px; display: inline-grid; place-items: center; border-radius: 50%; border: 1px solid rgba(236,231,220,.22); }
+    .sheet .contact { margin-top: 18px; }
+    main { padding-left: max(var(--gut), env(safe-area-inset-left)); padding-right: max(var(--gut), env(safe-area-inset-right)); }
+    html { scroll-padding-top: 76px; }
+    .intro-name { display: block; margin-top: 18px; font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 7vw, 3rem); line-height: 1.05; letter-spacing: -.015em; }
+    .intro-role { display: block; margin-top: 10px; font-family: var(--sans); font-size: 1rem; font-weight: 600; letter-spacing: 0; color: var(--ink); }
+    .intro-focus { display: block; margin-top: 2px; font-family: var(--sans); font-size: .95rem; font-weight: 500; letter-spacing: 0; color: var(--gold); }
+    .intro-contact { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .statement { margin-top: 26px; font-size: clamp(1.35rem, 4.6vw, 1.75rem); }
+    .intro { padding-top: 36px; }
+  }
+  @media (min-width: 1024px) {
+    .intro-contact { display: none !important; }
+    .intro-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  }
+  @media (max-width: 1100px) {
+    .signals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sg:nth-child(3) { border-left: 0; padding-left: 0; }
+    .sg:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  }
+  @media (max-width: 760px) {
+    .cs-head { padding: 22px 20px 16px; }
+    .brief { margin: 0 20px; }
+    .br-row { grid-template-columns: 1fr; gap: 6px; }
+    .br-row dt { padding-top: 0; }
+    .cs-foot { padding: 14px 20px 18px; }
+    .cs-btn { width: 100%; justify-content: center; }
+    .cs-title { font-size: 1.38rem; }
+    .imp-num { font-size: 2.1rem; }
+    .two, .dom, .resp, .aw, .proj, .edu, .t-grid, .feat-grid, .ov { grid-template-columns: 1fr; }
+    .two { gap: 32px; } .ov { gap: 36px; }
+    .ts { grid-template-columns: 1fr; gap: 26px; }
+    .ledger { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ledger li a { border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--rule); }
+    .ledger li:nth-child(-n+2) a { border-top: 0; }
+    .ledger li:nth-child(even) a { padding-left: 16px !important; border-left: 1px solid var(--rule) !important; }
+    .lg-num { font-size: 1.85rem; }
+    .role { grid-template-columns: 1fr; gap: 12px; padding: 30px 0; }
+    .r-when { flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+    .r-title { font-size: 1.32rem; } .is-early .r-title { font-size: 1.18rem; }
+    .gap { padding-left: 0; }
+    .sh { grid-template-columns: auto 1fr; margin-bottom: 26px; }
+    .sh .ev-toggle { grid-column: 1 / -1; justify-self: start; margin-top: 8px; }
+    .feat { padding: 26px 22px 22px; }
+    .bars li { grid-template-columns: minmax(0, 1fr) 1.4rem; grid-template-areas: 'l v' 't t'; row-gap: 6px; }
+    .br-l { grid-area: l; } .br-v { grid-area: v; } .br-t { grid-area: t; }
+    .cert li { flex-direction: column; gap: 4px; }
+    .cta .btn { flex: 1 1 100%; justify-content: center; }
+    .intro-contact .btn { flex: 1 1 100%; justify-content: center; }
+  }
+  @media (max-width: 480px) {
+    .signals { grid-template-columns: 1fr; }
+    .sg, .sg:nth-child(3) { padding-left: 0; padding-right: 0; border-left: 0 !important; }
+    .sg + .sg { border-top: 1px solid var(--rule); }
+  }
+  @media (max-width: 360px) {
+    .mh-brand span:last-child { display: none; }
+    .ledger { grid-template-columns: 1fr 1fr; }
+    .lg-num { font-size: 1.6rem; }
+  }
+
+  @media (pointer: coarse) {
+    .sg-link { min-height: 44px; }
+    .p-link, .foot a, .contact li > a, .ev-toggle, .arc-s a { min-height: 44px; }
+    .contact li.avail { min-height: 44px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
+  }
+  @media print {
+    @page { margin: 16mm 14mm; }
+    :root { --paper: #fff; --sheet: #fff; }
+    .side, .mhead, .sheet, .skip, .ev-toggle, .foot, .cta, .intro-contact { display: none !important; }
+    .shell { display: block; background: none; }
+    main { padding: 0; }
+    .col { max-width: none; }
+    .intro-name { position: static !important; width: auto !important; height: auto !important; overflow: visible !important; clip: auto !important; white-space: normal !important; display: block !important; margin-top: 10px; font-family: var(--serif); font-weight: 500; font-size: 2.2rem; line-height: 1.1; }
+    .intro-role, .intro-focus { display: block !important; font-family: var(--sans); font-size: 1rem; }
+    .intro-role { margin-top: 8px; font-weight: 600; } .intro-focus { color: var(--gold); }
+    .intro { padding-top: 0; }
+    .print-contact { display: flex !important; }
+    .reveal, .r-skills li, .intro > * { opacity: 1 !important; transform: none !important; transition: none !important; animation: none !important; }
+    .br-f, .stk, .ra { transition: none !important; width: var(--w) !important; }
+    .arc-s { transform: none !important; transition: none !important; }
+    .sec { padding-top: 28px; }
+    .role, .feat, .cert li, .dom li, .resp li, .proj li { break-inside: avoid; }
+    .feat { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .cs-panel { grid-template-rows: 1fr !important; visibility: visible !important; transition: none !important; }
+    .brief-more .br-row { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .cs-foot { display: none !important; }
+    .cs-btn, .sg-link { display: none !important; }
+    .cs, .sg { break-inside: avoid; }
+    .k-desk { display: inline !important; } .k-mob { display: none !important; }
+    .p-link span:first-child { background: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10v7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</defs></svg>
+
+<header class="mhead" id="top-m">
+  <a class="mh-brand" href="#top" aria-label="Rizwana Zahoor, back to top"><span class="mono" aria-hidden="true">RZ</span><span>Rizwana Zahoor</span></a>
+  <div class="mh-tools">
+    <button type="button" class="mh-btn theme-m" data-theme-toggle aria-label="Switch to dark mode"><svg class="ic i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic i-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
+    <button type="button" class="mh-btn" id="openToc" aria-expanded="false" aria-controls="sheet"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg><span>Contents</span></button>
+  </div>
+  <div class="mh-progress" aria-hidden="true"><span data-progress></span></div>
+</header>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Contents" aria-hidden="true">
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-panel">
+    <div class="sheet-top"><span class="toc-h" style="margin:0">Contents</span><button type="button" class="sheet-close" data-close aria-label="Close contents"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <nav aria-label="CV sections (mobile)"><ul class="toc"><li><a href="#executive-impact" data-nav="executive-impact" data-covers="executive-impact">Impact</a></li><li><a href="#summary" data-nav="summary" data-covers="overview summary">Profile</a></li><li><a href="#experience" data-nav="experience" data-covers="experience">Experience</a></li><li><a href="#domains" data-nav="domains" data-covers="domains expertise tools technical-skills">Expertise</a></li><li><a href="#responsibilities" data-nav="responsibilities" data-covers="responsibilities leadership">Responsibilities</a></li><li><a href="#credentials" data-nav="credentials" data-covers="credentials awards">Certifications</a></li><li><a href="#ai-projects" data-nav="ai-projects" data-covers="ai-projects">AI &amp; QE Projects</a></li><li><a href="#projects" data-nav="projects" data-covers="projects accomplishments">Projects</a></li><li><a href="#education" data-nav="education" data-covers="soft-skills education">Education</a></li><li><a href="#contact" data-nav="contact" data-covers="contact">Contact</a></li></ul></nav>
+    <ul class="contact">
+  <li><a href="mailto:rizwana.zahoor@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span>rizwana.zahoor@gmail.com</span></a></li>
+  <li><a href="tel:+971521690167"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>+971 52 169 0167</span></a></li>
+  <li><a href="https://www.linkedin.com/in/rizwana-zahoor-principal-sqa/" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span><span class="sr"> (opens in a new tab)</span></a></li>
+  <li class="avail"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>Dubai, UAE · Onsite / Hybrid / Remote</span></li>
+</ul>
+  </div>
+</div>
+
+<div class="shell" id="top">
+  <aside class="side" aria-label="Profile">
+    <span class="mono" aria-hidden="true">RZ</span>
+    <p class="side-name">Rizwana Zahoor</p>
+    <p class="side-role">Principal Software Quality Engineer</p>
+    <p class="side-focus">API, Backend &amp; Automation Testing</p>
+    <hr class="side-rule" />
+    <ul class="contact">
+  <li><a href="mailto:rizwana.zahoor@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span>rizwana.zahoor@gmail.com</span></a></li>
+  <li><a href="tel:+971521690167"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>+971 52 169 0167</span></a></li>
+  <li><a href="https://www.linkedin.com/in/rizwana-zahoor-principal-sqa/" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span><span class="sr"> (opens in a new tab)</span></a></li>
+  <li class="avail"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>Dubai, UAE · Onsite / Hybrid / Remote</span></li>
+</ul>
+    <hr class="side-rule" />
+    <nav aria-label="CV sections"><p class="toc-h">Contents</p><ul class="toc"><li><a href="#executive-impact" data-nav="executive-impact" data-covers="executive-impact">Impact</a></li><li><a href="#summary" data-nav="summary" data-covers="overview summary">Profile</a></li><li><a href="#experience" data-nav="experience" data-covers="experience">Experience</a></li><li><a href="#domains" data-nav="domains" data-covers="domains expertise tools technical-skills">Expertise</a></li><li><a href="#responsibilities" data-nav="responsibilities" data-covers="responsibilities leadership">Responsibilities</a></li><li><a href="#credentials" data-nav="credentials" data-covers="credentials awards">Certifications</a></li><li><a href="#ai-projects" data-nav="ai-projects" data-covers="ai-projects">AI &amp; QE Projects</a></li><li><a href="#projects" data-nav="projects" data-covers="projects accomplishments">Projects</a></li><li><a href="#education" data-nav="education" data-covers="soft-skills education">Education</a></li><li><a href="#contact" data-nav="contact" data-covers="contact">Contact</a></li></ul></nav>
+    <div class="side-foot">
+      <div class="progress" aria-hidden="true"><span data-progress></span></div>
+      <button type="button" class="theme" data-theme-toggle aria-label="Switch to dark mode"><svg class="ic sm i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic sm i-sun" aria-hidden="true"><use href="#i-sun"/></svg><span data-theme-label>Dark</span></button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div class="col">
+      <div class="intro">
+        <p class="kicker"><span class="k-desk">Principal Software Quality Engineer</span><span class="k-mob">Dubai, UAE · Onsite / Hybrid / Remote</span></p>
+        <h1 class="intro-name">Rizwana Zahoor<span class="intro-role">Principal Software Quality Engineer</span><span class="intro-focus">API, Backend &amp; Automation Testing</span></h1>
+        <p class="print-contact">rizwana.zahoor@gmail.com · +971 52 169 0167 · https://www.linkedin.com/in/rizwana-zahoor-principal-sqa/</p>
+        <p class="statement">Turning quality into a competitive edge, with 13+ years driving test strategy, automation, and release stability for regulated platforms.</p>
+        <div class="intro-contact">
+          <a class="btn btn-ink" href="mailto:rizwana.zahoor@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span>rizwana.zahoor@gmail.com</span></a>
+          <a class="btn btn-line" href="tel:+971521690167"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>+971 52 169 0167</span></a>
+          <a class="btn btn-line" href="https://www.linkedin.com/in/rizwana-zahoor-principal-sqa/" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span><span class="sr"> (opens in a new tab)</span></a>
+        </div>
+        <ul class="ledger reveal" aria-label="At a glance"><li><a href="#summary"><span class="lg-num">13+</span><span class="lg-lbl">Years of Experience</span></a></li><li><a href="#domains"><span class="lg-num">5</span><span class="lg-lbl">Industry Domains</span></a></li><li><a href="#expertise"><span class="lg-num">18</span><span class="lg-lbl">Testing Disciplines</span></a></li><li><a href="#tools"><span class="lg-num">23</span><span class="lg-lbl">Tools &amp; Tech</span></a></li><li><a href="#credentials"><span class="lg-num">9</span><span class="lg-lbl">Certifications</span></a></li><li><a href="#experience"><span class="lg-num">5</span><span class="lg-lbl">Career Roles</span></a></li></ul>
+      </div>
+      <section class="sec sec-impact" id="executive-impact" aria-labelledby="executive-impact-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">01</span><h2 class="sh-title" id="executive-impact-t">Executive Impact</h2></header><ul class="signals" aria-label="Capability signals"><li class="sg reveal" style="--i:0"><h3 class="sg-label">AI Quality</h3><span class="sg-head">LLM · RAG · Conversational AI</span><p class="sg-ev">LLM and RAG evaluation, hallucination, prompt-injection, safety and bias testing.</p><a class="sg-link" href="#case-ai" data-open-case="case-ai">View evidence<svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></a></li><li class="sg reveal" style="--i:1"><h3 class="sg-label">Banking &amp; FinTech</h3><span class="sg-head">Regulated Platforms</span><p class="sg-ev">Mobile banking, credit advisory and fintech releases with compliance requirements.</p><a class="sg-link" href="#case-bank" data-open-case="case-bank">View evidence<svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></a></li><li class="sg reveal" style="--i:2"><h3 class="sg-label">Quality Engineering</h3><span class="sg-head">Automation · Release Risk</span><p class="sg-ev">Test strategy, Playwright UI and API automation, risk-based regression and release readiness.</p><a class="sg-link" href="#case-qe" data-open-case="case-qe">View evidence<svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></a></li><li class="sg reveal" style="--i:3"><h3 class="sg-label">Experience</h3><span class="sg-big"><span class="countup" data-to="13" style="--w:2ch">13</span>+<span class="sg-unit"> Years</span></span><p class="sg-ev">From telecom ERP test strategy (2007) to Principal Software Quality Engineer.</p></li></ul><div class="cases"><article class="cs reveal" id="case-ai" style="--i:0" aria-labelledby="case-ai-t">
+  <header class="cs-head">
+    <p class="cs-cat">AI Quality · LLM &amp; RAG</p>
+    <h3 class="cs-title" id="case-ai-t">RAG &amp; Conversational AI Quality</h3>
+    <p class="cs-where">Clustox · Principal Quality Assurance Engineer 2022–2026 · Senior Quality Assurance Engineer 2019–2022</p>
+    <p class="cs-sum">Led QA and LLM evaluation for a RAG-based AI coaching platform, after owning QA for an AI voice messaging platform and its customer support chatbot.</p>
+  </header>
+  <dl class="brief"><div class="br-row"><dt>Ownership</dt><dd>Led QA and LLM evaluation on Quantified Communications, a RAG-based AI coaching platform. Owned manual and automated QA for Telbee, a WHO-affiliated AI voice messaging platform, including its AI customer support chatbot.</dd></div><div class="br-row br-impact"><dt>Impact</dt><dd><p class="ev-kind">Reported outcome</p><p class="imp-txt">Automated AI regression suite in place, with production quality monitored after releases.</p></dd></div></dl>
+  <div class="cs-panel" id="case-ai-p" role="region" aria-labelledby="case-ai-t"><div class="cs-inner"><dl class="brief brief-more"><div class="br-row"><dt>Technical methods</dt><dd><ul class="br-list"><li>Built LLM evaluation datasets and criteria (expected answers, grounding, citation accuracy), test cases and an automated AI regression suite</li><li>Tested retrieval accuracy, relevance and document indexing</li><li>Checked responses for grounding and citation accuracy against source documents, and caught hallucinations against expected answers</li><li>Ran prompt testing, adversarial and prompt injection tests, and checked AI outputs for safety and bias issues</li><li>Verified vector database updates and access permissions; measured latency and scalability</li><li>Behavioural consistency and output accuracy testing of the Telbee AI customer support chatbot</li></ul></dd></div><div class="br-row"><dt>Technology stack</dt><dd><ul class="br-stack"><li>Vector databases</li></ul></dd></div></dl></div></div>
+  <div class="cs-foot"><button type="button" class="cs-btn" aria-expanded="false" aria-controls="case-ai-p"><span class="cs-btn-t">Methods &amp; stack</span><span class="cs-btn-n">6 methods</span><svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+</article><article class="cs reveal" id="case-bank" style="--i:1" aria-labelledby="case-bank-t">
+  <header class="cs-head">
+    <p class="cs-cat">Banking · FinTech · Regulated</p>
+    <h3 class="cs-title" id="case-bank-t">Banking &amp; Regulated Platforms</h3>
+    <p class="cs-where">Clustox 2022–2026 · Intelligentsia Corporation 2013–2019</p>
+    <p class="cs-sum">Test strategy, API and backend validation and release testing for web and mobile banking and fintech applications with compliance requirements.</p>
+  </header>
+  <dl class="brief"><div class="br-row"><dt>Ownership</dt><dd>Own test strategy, API and backend validation, and release testing for web and mobile banking and fintech applications with compliance requirements.</dd></div><div class="br-row br-impact"><dt>Impact</dt><dd><p class="ev-kind">Reported outcome</p><p class="imp-txt">Recognized for reducing regression risk, strengthening release stability and delivering audit-ready quality outcomes.</p></dd></div></dl>
+  <div class="cs-panel" id="case-bank-p" role="region" aria-labelledby="case-bank-t"><div class="cs-inner"><dl class="brief brief-more"><div class="br-row"><dt>Technical methods</dt><dd><ul class="br-list"><li>Functional and non-functional testing of mobile banking and credit advisory apps, focused on data integrity and regulatory compliance</li><li>REST API and backend integration testing with Postman</li><li>SQL-based data validation, backend data verification and business-rule validation against DB records</li><li>Data integrity and access-control validation; regulatory-compliance validation (banking/fintech/healthcare)</li><li>Combines manual and automated regression testing during release cycles</li></ul></dd></div><div class="br-row"><dt>Technology stack</dt><dd><ul class="br-stack"><li>Postman</li><li>REST APIs</li><li>JSON</li><li>SQL</li><li>Jira</li><li>Xray</li></ul></dd></div></dl></div></div>
+  <div class="cs-foot"><button type="button" class="cs-btn" aria-expanded="false" aria-controls="case-bank-p"><span class="cs-btn-t">Methods &amp; stack</span><span class="cs-btn-n">5 methods</span><svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+</article><article class="cs reveal" id="case-qe" style="--i:2" aria-labelledby="case-qe-t">
+  <header class="cs-head">
+    <p class="cs-cat">Quality Engineering · Automation</p>
+    <h3 class="cs-title" id="case-qe-t">Automation &amp; Release Stability</h3>
+    <p class="cs-where">Clustox · Principal Quality Assurance Engineer 2022–2026</p>
+    <p class="cs-sum">AI-assisted Playwright automation for UI and API tests, with regression scoping reworked to stabilize releases.</p>
+  </header>
+  <dl class="brief"><div class="br-row"><dt>Ownership</dt><dd>Designed AI-assisted Playwright test automation for UI and API tests. Manage the defect lifecycle in Jira and Xray, from triage and root cause analysis with developers through to fix verification.</dd></div><div class="br-row br-impact"><dt>Impact</dt><dd><p class="ev-kind">Reported outcome</p><p class="imp-txt">Reduced regression escapes and stabilized releases.</p></dd></div></dl>
+  <div class="cs-panel" id="case-qe-p" role="region" aria-labelledby="case-qe-t"><div class="cs-inner"><dl class="brief brief-more"><div class="br-row"><dt>Technical methods</dt><dd><ul class="br-list"><li>Page Object and Service Object models with reusable components, reporting and a CI-ready structure</li><li>POC evaluations of BDD, TDD and ATDD to set framework direction</li><li>Parallel cross-browser and cross-device runs on BrowserStack</li><li>Reworked test design, defect triage and regression scoping</li></ul></dd></div><div class="br-row"><dt>Technology stack</dt><dd><ul class="br-stack"><li>Playwright</li><li>JavaScript</li><li>TypeScript</li><li>BrowserStack</li><li>GitHub</li><li>Jira</li><li>Xray</li></ul></dd></div></dl></div></div>
+  <div class="cs-foot"><button type="button" class="cs-btn" aria-expanded="false" aria-controls="case-qe-p"><span class="cs-btn-t">Methods &amp; stack</span><span class="cs-btn-n">4 methods</span><svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+</article><article class="cs reveal" id="case-risk" style="--i:3" aria-labelledby="case-risk-t">
+  <header class="cs-head">
+    <p class="cs-cat">AI-Assisted Release Risk</p>
+    <h3 class="cs-title" id="case-risk-t">AI QA Release Risk Engine</h3>
+    <p class="cs-where">Self-built project</p>
+    <p class="cs-sum">Self-built AI-assisted release risk workflow that turns scattered release information into a structured go/no-go picture.</p>
+  </header>
+  <dl class="brief"><div class="br-row"><dt>Ownership</dt><dd>Built end to end and validated across frontend, APIs, backend, business logic, AI integration and security.</dd></div><div class="br-row br-impact"><dt>Impact</dt><dd><p class="ev-kind is-measured">Measured</p><p class="imp-measure"><span class="imp-num"><span class="countup" data-to="253" style="--w:3ch">253</span><span class="imp-of">/253</span></span> <span class="imp-txt">regression tests passed; live AI integration verified.</span></p></dd></div></dl>
+  <div class="cs-panel" id="case-risk-p" role="region" aria-labelledby="case-risk-t"><div class="cs-inner"><dl class="brief brief-more"><div class="br-row"><dt>Technical methods</dt><dd><ul class="br-list"><li>Combines LLM analysis and deterministic quality gates to identify test gaps, regression risks and release readiness</li><li>Produces risk analysis, test coverage gaps, missing scenarios and regression priorities</li></ul></dd></div><div class="br-row"><dt>Live</dt><dd><a class="p-link" href="https://ai-qa-release-risk-agent.vercel.app" target="_blank" rel="noopener noreferrer"><span>ai-qa-release-risk-agent.vercel.app</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></dd></div></dl></div></div>
+  <div class="cs-foot"><button type="button" class="cs-btn" aria-expanded="false" aria-controls="case-risk-p"><span class="cs-btn-t">Methods &amp; stack</span><span class="cs-btn-n">2 methods</span><svg class="ic sm" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+</article></div></section><section class="sec " id="overview" aria-labelledby="overview-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">02</span><h2 class="sh-title" id="overview-t">Skills &amp; Experience Visualization</h2></header><div class="ov">
+  <figure class="ov-a reveal"><figcaption class="eyebrow">Tools by Category</figcaption><ul class="bars"><li><span class="br-l">Bug Tracking</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:100.0%"></span></span><span class="br-v">5</span></li><li><span class="br-l">Monitoring &amp; Logging</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:80.0%"></span></span><span class="br-v">4</span></li><li><span class="br-l">Test Management</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:60.0%"></span></span><span class="br-v">3</span></li><li><span class="br-l">Automation Tools</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:40.0%"></span></span><span class="br-v">2</span></li><li><span class="br-l">Database Tools</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:40.0%"></span></span><span class="br-v">2</span></li><li><span class="br-l">Security Tools</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:40.0%"></span></span><span class="br-v">2</span></li><li><span class="br-l">API Tools</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:20.0%"></span></span><span class="br-v">1</span></li><li><span class="br-l">CI/CD</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:20.0%"></span></span><span class="br-v">1</span></li><li><span class="br-l">Performance Tools</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:20.0%"></span></span><span class="br-v">1</span></li><li><span class="br-l">Version Control</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:20.0%"></span></span><span class="br-v">1</span></li><li><span class="br-l">Cross-Browser / Device Testing</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:20.0%"></span></span><span class="br-v">1</span></li></ul></figure>
+  <div class="ov-b">
+    <figure class="reveal"><figcaption class="eyebrow">Testing Expertise by Category</figcaption><ul class="bars"><li><span class="br-l">Core</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:80.0%"></span></span><span class="br-v">8</span></li><li><span class="br-l">Specialized</span><span class="br-t" aria-hidden="true"><span class="br-f" style="--w:100.0%"></span></span><span class="br-v">10</span></li></ul></figure>
+    <figure class="reveal"><figcaption class="eyebrow">Tool Proficiency Distribution</figcaption><div class="stack" aria-hidden="true"><span class="stk p-advanced" style="--w:26.09%"></span><span class="stk p-proficient" style="--w:4.35%"></span><span class="stk p-working-knowledge" style="--w:69.57%"></span></div><ul class="legend"><li><i class="sw p-advanced" aria-hidden="true"></i>Advanced <b>6</b></li><li><i class="sw p-proficient" aria-hidden="true"></i>Proficient <b>1</b></li><li><i class="sw p-working-knowledge" aria-hidden="true"></i>Working Knowledge <b>16</b></li></ul></figure>
+    <figure class="reveal"><figcaption class="eyebrow">Certifications &amp; Courses</figcaption>
+      <div class="ratio"><span class="ratio-n">9</span><div class="ratio-bar" aria-hidden="true"><span class="ra" style="--w:44.4%"></span></div></div>
+      <ul class="legend"><li><i class="sw sw-a" aria-hidden="true"></i>Formal Certification <b>4</b></li><li><i class="sw sw-b" aria-hidden="true"></i>Course / Training <b>5</b></li></ul></figure>
+  </div>
+</div></section><section class="sec " id="summary" aria-labelledby="summary-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">03</span><h2 class="sh-title" id="summary-t">Professional Summary</h2></header><ul class="meta-row reveal"><li>13+ Years Experience</li><li>Current: Principal Software Quality Engineer</li><li>Clustox · since Jan 2022</li></ul><p class="lead reveal">Results-driven Software Quality Engineering leader with 13+ years of experience driving test strategy, automation, and release quality across healthcare, banking/fintech, SaaS, and enterprise web, mobile, and API platforms for regulated, global-facing organizations.</p><p class="prose reveal">Proven track record on mission-critical systems, including hospital ERP operations for Quaid-e-Azam International Hospital (via Fauji Foundation) and Telbee, an AI-powered, WHO-affiliated voice-messaging platform delivering recognition messages to frontline medical officers worldwide, including its 24/7 AI-driven customer-support chatbot. Deep expertise in API testing (Postman, REST/JSON), SQL/database validation, and end-to-end defect lifecycle management (Jira, Xray), paired with automation engineering in Playwright (API + UI) and working knowledge of Selenium and Appium. Skilled at safeguarding data integrity, access control, and regulatory compliance across banking, credit-advisory, and healthcare systems handling sensitive customer data. A trusted cross-functional partner to Product, Development, DevOps, and offshore teams in Agile/Scrum environments, extending into review meetings with clients, stakeholders, Product Owners, Customer Support, and Marketing, with hands-on experience validating AI-enabled features and AI-assisted test case generation. Recognized for reducing regression risk, strengthening release stability, and delivering audit-ready quality outcomes in fast-paced, minimal-supervision environments, bringing the rigor, ownership, and strategic QA leadership international teams need to scale with confidence.</p></section><section class="sec " id="experience" aria-labelledby="experience-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">04</span><h2 class="sh-title" id="experience-t">Career Progression Timeline</h2></header><figure class="arc reveal" aria-label="Career arc, 2007 to 2026"><ol class="arc-t"><li class="arc-s st-foundation" style="--l:0.00%;--w:6.44%"><a href="#role-it-specialist"><span class="sr">IT Specialist, Apr 2007 to Jul 2008</span></a></li><li class="arc-s st-foundation" style="--l:25.75%;--w:3.00%"><a href="#role-qc-intern"><span class="sr">Quality Control Intern, Apr 2012 to Jul 2012</span></a></li><li class="arc-s st-expansion" style="--l:30.48%;--w:33.47%"><a href="#role-qa-analyst"><span class="sr">Quality Assurance Analyst, Mar 2013 to Sep 2019</span></a></li><li class="arc-s st-ownership" style="--l:64.37%;--w:12.00%"><a href="#role-senior-qae"><span class="sr">Senior Quality Assurance Engineer, Oct 2019 to Feb 2022</span></a></li><li class="arc-s st-principal" style="--l:76.83%;--w:23.17%"><a href="#role-principal-sqe"><span class="sr">Principal Quality Assurance Engineer, Mar 2022 to Sep 2026</span></a></li></ol><div class="arc-y" aria-hidden="true"><span style="--l:-1.29%">2007</span><span style="--l:29.61%">2013</span><span style="--l:60.50%">2019</span><span style="--l:75.95%">2022</span><span style="--l:96.55%">2026</span></div><ul class="legend"><li><i class="sw st-foundation" aria-hidden="true"></i>Foundation</li><li><i class="sw st-expansion" aria-hidden="true"></i>Expansion</li><li><i class="sw st-ownership" aria-hidden="true"></i>Ownership</li><li><i class="sw st-principal" aria-hidden="true"></i>Principal · AI Quality</li></ul></figure>
+<ol class="roles" id="roles"><li class="role st-principal is-now reveal" id="role-principal-sqe">
+  <div class="r-when"><span class="r-years"><time>Mar 2022</time><span class="r-dash"> – </span><time>Sep 2026</time></span><span class="r-stage">Principal · AI Quality</span></div>
+  <div class="r-what">
+    <h3 class="r-title">Principal Quality Assurance Engineer</h3>
+    <p class="r-org">Clustox</p><p class="r-loc">Remote · USA</p>
+    <p class="r-focus">Owns test strategy, API and backend validation and release testing for banking and fintech applications, and leads QA and LLM evaluation for a RAG-based AI coaching platform.</p>
+    <ul class="r-pts"><li>Own test strategy, API and backend validation, and release testing for web and mobile banking and fintech applications with compliance requirements.</li><li>Designed AI-assisted Playwright test automation for UI and API tests on Page Object and Service Object models, with reusable components, reporting and a CI-ready structure; ran BDD, TDD and ATDD POC evaluations to set framework direction and set up parallel cross-browser and cross-device runs on BrowserStack.</li><li>Led QA and LLM evaluation on Quantified Communications, a RAG-based AI coaching platform: retrieval accuracy, relevance and document indexing, grounding and citation accuracy against source documents, hallucinations against expected answers, and vector database updates and access permissions.</li><li>Built LLM evaluation datasets and criteria, test cases and an automated AI regression suite; ran prompt, adversarial and prompt injection testing and checked AI outputs for safety and bias; measured latency and scalability and monitored production quality after releases.</li><li>Manage the defect lifecycle in Jira and Xray from triage and root cause analysis through fix verification; reworked test design, defect triage and regression scoping, which reduced regression escapes and stabilized releases.</li></ul>
+    <ul class="r-skills" aria-label="Key skills in this role"><li style="--k:0">Test Strategy</li><li style="--k:1">LLM Evaluation</li><li style="--k:2">RAG Evaluation</li><li style="--k:3">Hallucination Testing</li><li style="--k:4">Prompt &amp; Prompt Injection Testing</li><li style="--k:5">AI Safety &amp; Bias Testing</li><li style="--k:6">Vector DB Testing</li><li style="--k:7">Playwright (UI + API)</li><li style="--k:8">API Testing</li><li style="--k:9">BrowserStack</li><li style="--k:10">Risk-Based Regression</li><li style="--k:11">Jira / Xray</li></ul>
+  </div>
+</li><li class="role st-ownership reveal" id="role-senior-qae">
+  <div class="r-when"><span class="r-years"><time>Oct 2019</time><span class="r-dash"> – </span><time>Feb 2022</time></span><span class="r-stage">Ownership</span></div>
+  <div class="r-what">
+    <h3 class="r-title">Senior Quality Assurance Engineer</h3>
+    <p class="r-org">Clustox</p><p class="r-loc">Remote · USA, UK</p>
+    <p class="r-focus">Owned manual and automated QA end to end, including testing an AI voice messaging platform and its customer support chatbot.</p>
+    <ul class="r-pts"><li>Owned manual and automated QA for Telbee, a WHO-affiliated AI voice messaging platform, including behavioural consistency and output accuracy testing of its AI customer support chatbot.</li><li>Wrote and ran functional, stress and load test plans for web and mobile apps.</li><li>Ran end-to-end integration and large-scale API testing of backend services.</li><li>Tested CRM workflows and integration APIs, including custom objects, field behaviour and data flow.</li></ul>
+    <ul class="r-skills" aria-label="Key skills in this role"><li style="--k:0">AI Chatbot Testing</li><li style="--k:1">Voice AI Testing</li><li style="--k:2">Test Planning</li><li style="--k:3">Stress &amp; Load Testing</li><li style="--k:4">API Testing</li><li style="--k:5">End-to-End Integration Testing</li><li style="--k:6">CRM Integration Testing</li><li style="--k:7">Web &amp; Mobile Testing</li></ul>
+  </div>
+</li><li class="role st-expansion reveal" id="role-qa-analyst">
+  <div class="r-when"><span class="r-years"><time>Mar 2013</time><span class="r-dash"> – </span><time>Sep 2019</time></span><span class="r-stage">Expansion</span></div>
+  <div class="r-what">
+    <h3 class="r-title">Quality Assurance Analyst</h3>
+    <p class="r-org">Intelligentsia Corporation</p><p class="r-loc">Remote · USA</p>
+    <p class="r-focus">Tested regulated mobile banking, credit advisory and real estate CRM systems, focused on data integrity and regulatory compliance.</p>
+    <ul class="r-pts"><li>Ran functional and non-functional testing of mobile banking and credit advisory apps, focused on data integrity and regulatory compliance.</li><li>Validated CRM functionality, custom objects and integrations for real estate clients on platforms including Leasing Desk and RealPage.</li></ul>
+    <ul class="r-skills" aria-label="Key skills in this role"><li style="--k:0">Functional Testing</li><li style="--k:1">Non-Functional Testing</li><li style="--k:2">Mobile Banking</li><li style="--k:3">Credit Advisory</li><li style="--k:4">Data Integrity</li><li style="--k:5">Regulatory Compliance</li><li style="--k:6">CRM Validation</li></ul>
+  </div>
+</li><li class="role st-foundation is-early reveal" id="role-qc-intern">
+  <div class="r-when"><span class="r-years"><time>Apr 2012</time><span class="r-dash"> – </span><time>Jul 2012</time></span><span class="r-stage">Foundation</span></div>
+  <div class="r-what">
+    <h3 class="r-title">Quality Control Intern</h3>
+    <p class="r-org">Fauji Foundation</p><p class="r-loc">Client: Quaid-e-Azam International Hospital</p>
+    <p class="r-focus">Hospital ERP testing with SQL data validation.</p>
+    <ul class="r-pts"><li>Hospital ERP testing for Quaid-e-Azam International Hospital, with SQL data validation.</li><li>Conducted system, integration, performance, and regression testing of hospital ERP modules using Oracle Application Testing Suite (OATS).</li></ul>
+    <ul class="r-skills" aria-label="Key skills in this role"><li style="--k:0">Hospital ERP Testing</li><li style="--k:1">SQL Data Validation</li><li style="--k:2">System &amp; Integration Testing</li><li style="--k:3">Regression Testing</li></ul>
+  </div>
+</li><li class="gap reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-grad"/></svg><span>Gap reflects full-time study toward the Master&#x27;s in Software Engineering (completed 2011).</span></li><li class="role st-foundation is-early reveal" id="role-it-specialist">
+  <div class="r-when"><span class="r-years"><time>Apr 2007</time><span class="r-dash"> – </span><time>Jul 2008</time></span><span class="r-stage">Foundation</span></div>
+  <div class="r-what">
+    <h3 class="r-title">IT Specialist</h3>
+    <p class="r-org">Mobilink</p>
+    <p class="r-focus">Designed and ran test strategies for telecom ERP systems.</p>
+    <ul class="r-pts"><li>Designed and ran test strategies for telecom ERP systems (PPTS, TRIPS).</li><li>Managed performance testing against SLAs and customer expectations.</li></ul>
+    <ul class="r-skills" aria-label="Key skills in this role"><li style="--k:0">Test Strategy</li><li style="--k:1">Telecom ERP</li><li style="--k:2">Performance Testing</li></ul>
+  </div>
+</li></ol></section><section class="sec " id="domains" aria-labelledby="domains-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">05</span><h2 class="sh-title" id="domains-t">Industry Domains</h2></header><ol class="dom"><li class="reveal"><span class="idx">01</span><div><h3 class="h4">Healthcare</h3><p class="small">Hospital ERP functional testing for Quaid-e-Azam International Hospital (via Fauji Foundation); QA of Telbee, a WHO-affiliated healthcare communication platform.</p></div></li><li class="reveal"><span class="idx">02</span><div><h3 class="h4">Banking &amp; Fintech</h3><p class="small">Regulated banking and credit-advisory systems handling sensitive customer data; mobile banking and credit-advisory application testing at Intelligentsia; Sabal Financials (investment/family-finance platform).</p></div></li><li class="reveal"><span class="idx">03</span><div><h3 class="h4">SaaS</h3><p class="small">SaaS platforms tested include Telbee (AI-based voice-messaging SaaS) and Quantified Communications (AI-powered sales-coaching SaaS).</p></div></li><li class="reveal"><span class="idx">04</span><div><h3 class="h4">Real Estate (CRM)</h3><p class="small">Salesforce CRM validation for real estate clients at Intelligentsia Corporation; additional real estate platforms tested include Leasing Desk, RealPage, Grubb &amp; Ellis, VAS (Valuation Assessment System), and Xceligent.</p></div></li><li class="reveal"><span class="idx">05</span><div><h3 class="h4">Telecom</h3><p class="small">IT Specialist at Mobilink, covering test strategy and performance testing for telecom products, including the PPTS inventory-management ERP and TRIPS purchase/payment-tracking ERP.</p></div></li></ol><div class="sub reveal"><h3 class="eyebrow">Application Types Tested</h3><ul class="tags"><li>Web Applications</li><li>Mobile Applications</li><li>API-Based Applications</li><li>AI Business Solutions</li></ul></div></section><section class="sec " id="expertise" aria-labelledby="expertise-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">06</span><h2 class="sh-title" id="expertise-t">Testing Expertise</h2><button type="button" class="ev-toggle" aria-pressed="false" data-ev>Show evidence</button></header><div class="two"><div class="reveal"><h3 class="eyebrow">Core <span class="cnt">8</span></h3><ul class="xlist"><li><span class="x-n">Manual Testing</span><span class="ev">Manual testing of web and mobile applications.</span></li><li><span class="x-n">Functional Testing</span><span class="ev">Explicit &quot;Functional&quot; testing type; functional testing bullets across multiple roles.</span></li><li><span class="x-n">Regression Testing</span><span class="ev">Explicit &quot;Regression&quot;; combines manual and automated regression during release cycles.</span></li><li><span class="x-n">Integration Testing</span><span class="ev">Explicit &quot;Integration&quot; testing type; hospital ERP integration testing.</span></li><li><span class="x-n">System Testing</span><span class="ev">&quot;Conducted system, integration, performance, and regression testing of hospital ERP modules.&quot;</span></li><li><span class="x-n">End-to-End Testing</span><span class="ev">Explicit &quot;End-to-End&quot; testing type and end-to-end tests across the SDLC.</span></li><li><span class="x-n">User Acceptance Testing (UAT)</span><span class="ev">Explicit &quot;UAT&quot;; &quot;Facilitated UAT with business stakeholders.&quot;</span></li><li><span class="x-n">Test Case Design &amp; Execution</span><span class="ev">Test Case Design listed under Ways of Working as a distinct testing discipline.</span></li></ul></div><div class="reveal"><h3 class="eyebrow">Specialized <span class="cnt">10</span></h3><ul class="xlist"><li><span class="x-n">API Testing</span><span class="ev">Strong API testing (Postman, REST/JSON); API contract &amp; response validation.</span></li><li><span class="x-n">Performance Testing</span><span class="ev">Explicit &quot;Performance&quot; testing type; performance testing of hospital ERP and telecom products.</span></li><li><span class="x-n">Mobile Testing</span><span class="ev">Explicit &quot;Mobile Testing&quot;; Appium used for mobile automation.</span></li><li><span class="x-n">Database Testing</span><span class="ev">SQL-based data validation, backend data verification, business-rule validation against DB records (MySQL).</span></li><li><span class="x-n">Security Testing</span><span class="ev">OWASP ZAP, Burp Suite; access-control &amp; permissions testing; listed as a course area.</span></li><li><span class="x-n">AI Testing</span><span class="ev">Listed as a course area; validating AI-enabled feature output accuracy, including AI-assisted test case generation.</span></li><li><span class="x-n">Non-Functional Testing</span><span class="ev">&quot;Performed functional and non-functional testing of mobile banking and credit-advisory applications.&quot;</span></li><li><span class="x-n">Multi-User / High-Volume Workflow Validation</span><span class="ev">Explicit testing type in the resume&#x27;s Skills &amp; Tools table.</span></li><li><span class="x-n">UI/UX Testing</span></li><li><span class="x-n">Cross-Browser Testing</span><span class="ev">BrowserStack used for cross-browser/device coverage.</span></li></ul></div></div></section><section class="sec " id="tools" aria-labelledby="tools-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">07</span><h2 class="sh-title" id="tools-t">Tools &amp; Technologies</h2></header><div class="t-grid"><div class="t-cat reveal"><h3 class="eyebrow">Test Management</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">Jira</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Full defect tracking using Jira and Xray</span></li><li><div class="t-row"><span class="t-n">Xray</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Full defect tracking using Jira and Xray</span></li><li><div class="t-row"><span class="t-n">TestRail</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Bug Tracking</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">Jira</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Own defect lifecycle management in Jira and Xray</span></li><li><div class="t-row"><span class="t-n">Xray</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Own defect lifecycle management in Jira and Xray</span></li><li><div class="t-row"><span class="t-n">Team Spira</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Managed bug tracking/issue resolution using Team Spira (Fauji Foundation, 2012)</span></li><li><div class="t-row"><span class="t-n">Azure DevOps</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li><li><div class="t-row"><span class="t-n">TFS</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Team Foundation Server</span></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">API Tools</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">Postman</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Strong API testing (Postman, REST/JSON)</span></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Automation Tools</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">Playwright (API + UI)</span><span class="t-lv lv-advanced">Advanced</span></div><span class="t-d">Automation experience in Playwright (API + UI); AI-assisted test automation on Page Object and Service Object models</span></li><li><div class="t-row"><span class="t-n">Appium</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Working knowledge of Appium (mobile); Mobile Automation (Appium) course</span></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">CI/CD</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">Jenkins</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Performance Tools</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">JMeter</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">API Testing (Postman, JMeter) course</span></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Database Tools</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">SQL</span><span class="t-lv lv-proficient">Proficient</span></div><span class="t-d">SQL/database validation; SQL-based data validation, backend data verification</span></li><li><div class="t-row"><span class="t-n">DBeaver</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Version Control</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">GitHub</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Security Tools</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">OWASP ZAP</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Security Testing (OWASP ZAP, Burp Suite) course</span></li><li><div class="t-row"><span class="t-n">Burp Suite</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Security Testing (OWASP ZAP, Burp Suite) course</span></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Monitoring &amp; Logging</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">AWS CloudWatch</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li><li><div class="t-row"><span class="t-n">Kibana</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li><li><div class="t-row"><span class="t-n">Sentry.io</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li><li><div class="t-row"><span class="t-n">Google Analytics</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div></li></ul></div><div class="t-cat reveal"><h3 class="eyebrow">Cross-Browser / Device Testing</h3><ul class="t-list"><li><div class="t-row"><span class="t-n">BrowserStack</span><span class="t-lv lv-working-knowledge">Working Knowledge</span></div><span class="t-d">Parallel cross-browser and cross-device runs on BrowserStack</span></li></ul></div></div></section><section class="sec " id="technical-skills" aria-labelledby="technical-skills-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">08</span><h2 class="sh-title" id="technical-skills-t">Technical Skills</h2></header><div class="ts"><div class="reveal"><h3 class="eyebrow">SQL</h3><ul class="dash"><li>SQL-based data validation</li><li>Backend data verification</li><li>Business-rule validation against DB records</li></ul></div><div class="reveal"><h3 class="eyebrow">Automation Frameworks</h3><ul class="dash"><li>Playwright (API + UI)</li><li>Appium (mobile)</li></ul></div><div class="reveal"><h3 class="eyebrow">APIs</h3><ul class="dash"><li>REST APIs / JSON</li><li>API Contract &amp; Response Validation</li><li>Backend Integration Testing</li><li>Postman</li></ul></div><div class="reveal"><h3 class="eyebrow">Cloud &amp; Monitoring</h3><ul class="dash"><li>AWS CloudWatch</li><li>Kibana</li></ul></div><div class="reveal"><h3 class="eyebrow">Methodologies</h3><ul class="dash"><li>Agile Scrum</li><li>Kanban</li><li>SDLC</li><li>BDD/TDD</li><li>Defect Lifecycle Management</li><li>Test Planning</li><li>Test Case Design</li></ul></div><div class="reveal"><h3 class="eyebrow">Other Technical Competencies</h3><ul class="dash"><li>Oracle Application Testing Suite (OATS)</li><li>Data integrity &amp; access-control validation</li><li>Regulatory-compliance validation (banking/fintech/healthcare)</li></ul></div></div></section><section class="sec " id="responsibilities" aria-labelledby="responsibilities-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">09</span><h2 class="sh-title" id="responsibilities-t">Roles &amp; Responsibilities</h2></header><ol class="resp"><li class="reveal"><h3 class="h4">Quality Strategy &amp; Test Planning</h3><p class="small">Designs and executes comprehensive test plans and test cases for web and mobile applications, with documented test evidence for release sign-off.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li><li>Senior Quality Assurance Engineer</li></ul></li><li class="reveal"><h3 class="h4">Defect Management</h3><p class="small">Owns defect lifecycle management in Jira and Xray: logging, triaging, root-cause analysis with developers, tracking through resolution and verification.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li></ul></li><li class="reveal"><h3 class="h4">Release Support</h3><p class="small">Combines manual and automated regression testing during release cycles in compliance-conscious banking/fintech environments where data accuracy and audit-readiness are critical.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li><li>Senior Quality Assurance Engineer</li></ul></li><li class="reveal"><h3 class="h4">Stakeholder Collaboration</h3><p class="small">Collaborates daily with Development, DevOps, and Product (including offshore teams) in Agile ceremonies; partners with clients, stakeholders, and Product Owners to gather requirements and validate functionality, and joins review meetings that extend beyond engineering to Customer Support and Marketing.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li><li>Senior Quality Assurance Engineer</li></ul></li><li class="reveal"><h3 class="h4">Risk Analysis</h3><p class="small">Tracks project milestones and risks, coordinating with cross-functional teams to ensure on-time, quality delivery.</p><ul class="role-pills" aria-label="Roles"><li>Senior Quality Assurance Engineer</li></ul></li><li class="reveal"><h3 class="h4">Process Improvement</h3><p class="small">Drives process improvements in test design, defect triage, and regression scoping that measurably reduced regression escapes and improved release stability.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li></ul></li><li class="reveal"><h3 class="h4">Production &amp; Technical Customer Support</h3><p class="small">Provides technical onboarding for customers entering the system backend, with complete assistance and support; handles production issues with rapid-turnaround support; tests AI-enabled product features for output accuracy and behavioral consistency.</p><ul class="role-pills" aria-label="Roles"><li>Principal Software Quality Engineer</li></ul></li><li class="reveal"><h3 class="h4">Business &amp; UAT Facilitation</h3><p class="small">Facilitates UAT with business stakeholders to confirm platforms meet functional and regulatory requirements.</p><ul class="role-pills" aria-label="Roles"><li>Senior Quality Assurance Engineer</li><li>Quality Assurance Analyst</li></ul></li></ol></section><section class="sec " id="credentials" aria-labelledby="credentials-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">10</span><h2 class="sh-title" id="credentials-t">Certifications</h2></header><div class="two"><div><h3 class="eyebrow">QA &amp; Testing</h3><ul class="cert"><li class="reveal"><div><h4 class="c-n">Scrum Fundamentals Certified (SFC™)</h4><p class="c-m">VMEdu · 2025</p></div><span class="c-t is-cert">Certification</span></li><li class="reveal"><div><h4 class="c-n">API Testing (Postman, JMeter)</h4></div><span class="c-t ">Course / Training</span></li><li class="reveal"><div><h4 class="c-n">Mobile Automation (Appium)</h4></div><span class="c-t ">Course / Training</span></li><li class="reveal"><div><h4 class="c-n">Selenium Automation</h4></div><span class="c-t ">Course / Training</span></li><li class="reveal"><div><h4 class="c-n">Security Testing (OWASP ZAP, Burp Suite)</h4></div><span class="c-t ">Course / Training</span></li><li class="reveal"><div><h4 class="c-n">AI Testing</h4></div><span class="c-t ">Course / Training</span></li></ul></div><div><h3 class="eyebrow">AI Tooling</h3><ul class="cert"><li class="reveal"><div><h4 class="c-n">Claude Code 101</h4><p class="c-m">Anthropic · 2026</p></div><span class="c-t is-cert">Certification</span></li><li class="reveal"><div><h4 class="c-n">Claude Code in Action</h4><p class="c-m">Anthropic · 2026</p></div><span class="c-t is-cert">Certification</span></li><li class="reveal"><div><h4 class="c-n">Introduction to Model Context Protocol</h4><p class="c-m">Anthropic · 2026</p></div><span class="c-t is-cert">Certification</span></li></ul></div></div></section><section class="sec " id="awards" aria-labelledby="awards-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">11</span><h2 class="sh-title" id="awards-t">Awards &amp; Achievements</h2></header><ol class="aw"><li class="reveal"><span class="idx">01</span><div><h3 class="h4">1st Prize, Best Tester, Testathon Event</h3><p class="small">Aurora Solutions</p></div></li><li class="reveal"><span class="idx">02</span><div><h3 class="h4">1st Prize, Research Paper: &quot;Progressive Mining Scheme for Estimating Developer&#x27;s Effort through Bug Fix Activity&quot;</h3><p class="small">Capital University of Science &amp; Technology (CUST) / International Conference on Biological and Computational Sciences (CBICS)</p></div></li><li class="reveal"><span class="idx">03</span><div><h3 class="h4">STAR Candidate</h3><p class="small">Pakistan Software Export Board (PSEB)</p></div></li><li class="reveal"><span class="idx">04</span><div><h3 class="h4">Certificate of Attendance, IT Soft Skills Training</h3><p class="small">Pakistan Software Export Board (PSEB)</p></div></li><li class="reveal"><span class="idx">05</span><div><h3 class="h4">Precious Gem &amp; Recognition Reward</h3><p class="small">Clustox</p></div></li><li class="reveal"><span class="idx">06</span><div><h3 class="h4">Certificate of Appreciation</h3><p class="small">Intelligentsia Software Ltd.</p></div></li></ol></section><section class="sec " id="leadership" aria-labelledby="leadership-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">12</span><h2 class="sh-title" id="leadership-t">Technical Leadership &amp; Ownership</h2></header><ol class="numbered"><li class="reveal"><span class="idx">01</span><p>Career progression from Quality Assurance Analyst (2013) to Senior Quality Assurance Engineer (2019) to Principal Software Quality Engineer (2022 to present), the most senior individual-contributor QA track at Clustox.</p></li><li class="reveal"><span class="idx">02</span><p>Owns defect lifecycle management end-to-end (&quot;Own defect lifecycle management in Jira and Xray&quot;) rather than only executing tests.</p></li><li class="reveal"><span class="idx">03</span><p>Drives process improvements independently (&quot;Drive process improvements... that measurably reduced regression escapes and improved release stability&quot;).</p></li><li class="reveal"><span class="idx">04</span><p>Operates with an &quot;ownership mindset in fast-paced, minimal-supervision environments,&quot; per the professional summary.</p></li><li class="reveal"><span class="idx">05</span><p>Leads cross-functional collaboration with Development, DevOps, Product, and offshore teams in daily Agile ceremonies, extending into review meetings with clients, stakeholders, Product Owners, Customer Support, and Marketing to clarify acceptance criteria and reduce production risk.</p></li></ol></section><section class="sec sec-feat" id="ai-projects" aria-labelledby="ai-projects-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">13</span><h2 class="sh-title" id="ai-projects-t">AI &amp; Quality Engineering Projects</h2></header><div class="feat-grid"><article class="feat feat-lead reveal">
+  <span class="feat-idx" aria-hidden="true">01</span>
+  <h3 class="feat-t">AI Testing Playbook</h3>
+  <p class="feat-d">Three-volume, 25-chapter technical handbook on testing and evaluating AI-enabled systems, from a single LLM call to multi-agent production platforms. Covers LLM, RAG, hallucination, prompt, agent, MCP and AI API testing, Playwright automation, evaluation metrics, security, observability, and enterprise AI testing frameworks, with worked examples, test matrices, AI bug reports, and code samples. 1,183 pages across three volumes.</p>
+  <ul class="feat-tags"><li>AI Quality Engineering</li><li>RAG &amp; LLM Testing</li><li>Agent &amp; MCP Testing</li></ul>
+  <a class="p-link" href="https://github.com/rizwana-qa/AI-Testing-Quality-Engineering-Playbook" target="_blank" rel="noopener noreferrer"><span>github.com/rizwana-qa/AI-Testing-Quality-Engineering-Playbook</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a>
+</article><article class="feat reveal">
+  <span class="feat-idx" aria-hidden="true">02</span>
+  <h3 class="feat-t">AI Powered QA Release Risk Engine</h3>
+  <p class="feat-d">Self-built AI release risk assessment tool turning scattered release information into a structured go/no-go picture: risk analysis, test coverage gaps, missing scenarios, and regression priorities. Validated end to end across frontend, APIs, backend, business logic, AI integration, and security. 253/253 regression tests passed, live AI integration verified.</p>
+  
+  <a class="p-link" href="https://ai-qa-release-risk-agent.vercel.app" target="_blank" rel="noopener noreferrer"><span>ai-qa-release-risk-agent.vercel.app</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a>
+</article><article class="feat reveal">
+  <span class="feat-idx" aria-hidden="true">03</span>
+  <h3 class="feat-t">Playwright Automation Framework</h3>
+  <p class="feat-d">Self-built test automation framework using Page Object Model for UI and Service Object Model for the API layer, with reusable utilities, structured test data handling, and execution designed to stay maintainable as the suite grows.</p>
+  
+  
+</article></div></section><section class="sec " id="projects" aria-labelledby="projects-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">14</span><h2 class="sh-title" id="projects-t">Project Highlights</h2></header><ol class="proj"><li class="reveal"><div class="p-h"><h3 class="h4">Telbee</h3><a class="p-link" href="https://telbee.io" target="_blank" rel="noopener noreferrer"><span>telbee.io</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">AI-based voice-messaging platform supporting a WHO-affiliated healthcare initiative that delivered recognition messages to frontline medical officers. QA&#x27;d voice-message capture and delivery across multiple formats, plus its 24/7 customer-support chatbot.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Hospital ERP (Quaid-e-Azam International Hospital)</h3><a class="p-link" href="https://www.qih.com.pk" target="_blank" rel="noopener noreferrer"><span>www.qih.com.pk</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">System, integration, performance, and regression testing of hospital ERP modules via Fauji Foundation, using Oracle Application Testing Suite (OATS); business requirements validated directly against the database.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Quantified Communications</h3><a class="p-link" href="https://quantified.ai" target="_blank" rel="noopener noreferrer"><span>quantified.ai</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">AI-powered sales coaching platform offering roleplay practice and compliance monitoring for pharma, financial services, and insurance teams.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Sabal Financials</h3><a class="p-link" href="https://sabalinvestmentholdings.com" target="_blank" rel="noopener noreferrer"><span>sabalinvestmentholdings.com</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Investment management firm focused on debt and equity investments in commercial real estate, including workforce and affordable housing.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Certa</h3><a class="p-link" href="https://certa.ai" target="_blank" rel="noopener noreferrer"><span>certa.ai</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">AI-powered third-party risk management platform automating vendor and supplier onboarding, monitoring, and compliance.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Leasing Desk</h3><a class="p-link" href="https://www.realpage.com" target="_blank" rel="noopener noreferrer"><span>www.realpage.com</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Rental insurance account management platform for the real estate industry.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">RealPage (Leaderboard)</h3><a class="p-link" href="https://realpage.com" target="_blank" rel="noopener noreferrer"><span>realpage.com</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Technology platform enabling real estate owners and managers to change how people experience and use rental space.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Grubb &amp; Ellis</h3><a class="p-link" href="https://www.grubbproperties.com" target="_blank" rel="noopener noreferrer"><span>www.grubbproperties.com</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Commercial real estate property listings platform.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">VAS (Valuation Assessment System)</h3><a class="p-link" href="https://vas-group.co.uk" target="_blank" rel="noopener noreferrer"><span>vas-group.co.uk</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Rental insurance and value assessment platform for real estate.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">Xceligent</h3></div><p class="small">Real estate valuation platform used to identify investment opportunities.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">PPTS</h3></div><p class="small">Inventory-management ERP system for telecom operations at Mobilink.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">TRIPS (Mobilink)</h3></div><p class="small">Purchase and payment-tracking ERP system at Mobilink.</p></li><li class="reveal"><div class="p-h"><h3 class="h4">MIST</h3><a class="p-link" href="https://getmistified.com" target="_blank" rel="noopener noreferrer"><span>getmistified.com</span><svg class="ic sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr"> (opens in a new tab)</span></a></div><p class="small">Nonprofit platform for the Muslim Interscholastic Tournament, an academic competition series for North American high school students.</p></li></ol></section><section class="sec " id="accomplishments" aria-labelledby="accomplishments-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">15</span><h2 class="sh-title" id="accomplishments-t">Key Accomplishments</h2></header><ul class="checks"><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>Recognized for reducing regression risk and improving release stability in complex, regulated environments.</span></li><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>Drove process improvements in test design, defect triage, and regression scoping that measurably reduced regression escapes and improved release stability.</span></li><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>Reduced defect leakage and improved delivery efficiency by partnering with stakeholders and developers to gather requirements and validate functionality.</span></li><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>Delivered data-driven insights that guided product decisions and improved user engagement and satisfaction.</span></li><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>1st Prize, Best Tester at the Testathon Event (Aurora Solutions).</span></li><li class="reveal"><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg><span>1st Prize for research paper on estimating developer effort through bug-fix activity (CUST / CBICS).</span></li></ul></section><section class="sec " id="soft-skills" aria-labelledby="soft-skills-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">16</span><h2 class="sh-title" id="soft-skills-t">Soft Skills</h2></header><ul class="tags reveal"><li>Analytical Thinking</li><li>Troubleshooting</li><li>Documentation</li><li>Ownership Mindset</li><li>Cross-Functional Collaboration</li><li>Works Independently in Minimal-Supervision Environments</li></ul></section><section class="sec " id="education" aria-labelledby="education-t"><header class="sh reveal"><span class="sh-num" aria-hidden="true">17</span><h2 class="sh-title" id="education-t">Education</h2></header><ul class="edu"><li class="reveal"><span class="edu-y">2011</span><h3 class="h4">Master&#x27;s in Software Engineering</h3></li><li class="reveal"><span class="edu-y">2008</span><h3 class="h4">Bachelor of Science (Honours) in Information Technology</h3></li></ul></section>
+      <section class="close reveal" id="contact" aria-labelledby="contact-t">
+        <div><h2 id="contact-t">Contact</h2><p>Rizwana Zahoor · Dubai, UAE · Onsite / Hybrid / Remote</p></div>
+        <div class="cta">
+          <a class="btn btn-ink" href="mailto:rizwana.zahoor@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span>rizwana.zahoor@gmail.com</span></a>
+          <a class="btn btn-line" href="tel:+971521690167"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>+971 52 169 0167</span></a>
+          <a class="btn btn-line" href="https://www.linkedin.com/in/rizwana-zahoor-principal-sqa/" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-in"/></svg><span>LinkedIn</span><span class="sr"> (opens in a new tab)</span></a>
+        </div>
+      </section>
+      <footer class="foot"><span>© Rizwana Zahoor · Principal Software Quality Engineer</span><a href="#top"><svg class="ic sm" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a></footer>
+    </div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) root.classList.add('js-motion');
+
+  /* theme (same storage key as the previous site) */
+  var toggles = document.querySelectorAll('[data-theme-toggle]');
+  function syncTheme() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    toggles.forEach(function (b) { b.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode'); });
+    document.querySelectorAll('[data-theme-label]').forEach(function (s) { s.textContent = dark ? 'Light' : 'Dark'; });
+  }
+  toggles.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncTheme();
+    });
+  });
+  syncTheme();
+
+  /* mobile contents sheet */
+  var sheet = document.getElementById('sheet'), openBtn = document.getElementById('openToc'), lastFocus = null;
+  function setSheet(open) {
+    sheet.classList.toggle('open', open);
+    sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+    openBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) { lastFocus = document.activeElement; var f = sheet.querySelector('.sheet-close'); f && f.focus(); }
+    else if (lastFocus) { lastFocus.focus(); }
+  }
+  openBtn.addEventListener('click', function () { setSheet(true); });
+  sheet.addEventListener('click', function (e) {
+    if (e.target.closest('[data-close]')) setSheet(false);
+    else if (e.target.closest('a[href^="#"]')) setSheet(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!sheet.classList.contains('open')) return;
+    if (e.key === 'Escape') setSheet(false);
+    if (e.key === 'Tab') {
+      var f = sheet.querySelectorAll('a, button'), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* evidence toggles */
+  document.querySelectorAll('[data-ev]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var s = b.closest('section'), on = !s.classList.contains('show-ev');
+      s.classList.toggle('show-ev', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.textContent = on ? 'Hide evidence' : 'Show evidence';
+    });
+  });
+
+
+  /* executive case studies: expand in place */
+  function setCase(card, open, focusBtn) {
+    var btn = card.querySelector('.cs-btn');
+    card.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.querySelector('.cs-btn-t').textContent = open ? 'Hide methods & stack' : 'Methods & stack';
+    if (focusBtn) btn.focus({ preventScroll: true });
+  }
+  document.querySelectorAll('.cs').forEach(function (card) {
+    card.querySelector('.cs-btn').addEventListener('click', function () { setCase(card, !card.classList.contains('open')); });
+  });
+  document.querySelectorAll('[data-open-case]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var c = document.getElementById(a.getAttribute('data-open-case'));
+      if (!c) return;
+      e.preventDefault();
+      c.classList.add('in');
+      setCase(c, true);
+      c.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      c.classList.remove('flash'); void c.offsetWidth; c.classList.add('flash');
+      c.querySelector('.cs-btn').focus({ preventScroll: true });
+    });
+  });
+
+  /* count-up: runs once per number, only when visible, never with reduced motion */
+  var countStop = false;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target, to = +el.getAttribute('data-to'), t0 = null, dur = 1100;
+        cio.unobserve(el);
+        function step(ts) {
+          if (countStop) { el.textContent = to; return; }
+          if (t0 === null) t0 = ts;
+          var k = Math.min(1, (ts - t0) / dur), v = Math.round(to * (1 - Math.pow(1 - k, 3)));
+          el.textContent = v;
+          if (k < 1) requestAnimationFrame(step); else el.textContent = to;
+        }
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.countup').forEach(function (el) { el.textContent = '0'; cio.observe(el); });
+    var finishCounts = function () { countStop = true; document.querySelectorAll('.countup').forEach(function (el) { cio.unobserve(el); el.textContent = el.getAttribute('data-to'); }); };
+    window.addEventListener('beforeprint', finishCounts);
+    if (window.matchMedia) { var pm = window.matchMedia('print'); pm.addEventListener && pm.addEventListener('change', function (e) { if (e.matches) finishCounts(); }); }
+  }
+
+  /* active section + progress */
+  var links = Array.prototype.slice.call(document.querySelectorAll('[data-nav]'));
+  var groups = [];
+  links.forEach(function (a) {
+    if (groups.some(function (g) { return g.key === a.dataset.nav; })) return;
+    groups.push({ key: a.dataset.nav, els: a.dataset.covers.split(' ').map(function (id) { return document.getElementById(id); }).filter(Boolean) });
+  });
+  var bars = document.querySelectorAll('[data-progress]'), ticking = false, clicked = null, clickedAt = 0;
+  links.forEach(function (a) { a.addEventListener('click', function () { clicked = a.dataset.nav; clickedAt = Date.now(); setTimeout(update, 0); setTimeout(update, 1300); }); });
+  function update() {
+    ticking = false;
+    var doc = document.documentElement, y = window.scrollY, max = doc.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, y / max) : 0;
+    bars.forEach(function (b) { b.style.transform = 'scaleX(' + p + ')'; });
+    var probe = window.innerHeight * 0.3, active = null;
+    groups.forEach(function (g) { g.els.forEach(function (el) { if (el.getBoundingClientRect().top <= probe) active = g.key; }); });
+    if (y + window.innerHeight >= doc.scrollHeight - 4) active = 'contact';
+    if (clicked && Date.now() - clickedAt < 1200) active = clicked;
+    links.forEach(function (a) { a.dataset.nav === active ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); });
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+
+  /* reveal on scroll, with a sweep so fast flings never leave content hidden */
+  if (root.classList.contains('js-motion')) {
+    var pending = Array.prototype.slice.call(document.querySelectorAll('.reveal, .arc'));
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+    pending.forEach(function (el) { io.observe(el); });
+    var sweep = function () {
+      var vh = window.innerHeight;
+      pending = pending.filter(function (el) {
+        if (el.classList.contains('in')) return false;
+        if (el.getBoundingClientRect().top < vh) { el.classList.add('in'); io.unobserve(el); return false; }
+        return true;
+      });
+    };
+    window.addEventListener('scroll', function () { requestAnimationFrame(sweep); }, { passive: true });
+    window.addEventListener('hashchange', sweep);
+    document.addEventListener('focusin', function (e) { var r = e.target.closest && e.target.closest('.reveal, .arc'); if (r) r.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
